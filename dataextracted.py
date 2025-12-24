@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 
-IMAGE_ROOT = "dataset/phrases"
+IMAGE_ROOT = "dataset/AnN"
 OUTPUT_CSV = "dataset/landmarks.csv"
 IMG_SIZE = 640
 
