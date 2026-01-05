@@ -1,6 +1,5 @@
 DUOSL (Dual OUTPUT Sign language Translator)
 
-link for daily log file:
 DUOSL is an end-to-end sign language translation system designed to bridge communication gaps between sign language users and non-signers.
 It supports two integrated pipelines:
 
