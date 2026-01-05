@@ -9,6 +9,7 @@ Sign Language → Text (via webcam, MediaPipe, and ML)
 Text → Sign Language (via Unity-based 3D avatar animation)
 
 The system focuses on real-time performance, stability, and accessibility, making it suitable for assistive communication and interactive applications.
+
 Overview of the UI:
 <img width="1913" height="1199" alt="image" src="https://github.com/user-attachments/assets/44e81706-799f-41dd-ab9a-05087eaa0d87" />
 <img width="890" height="503" alt="Screenshot 2026-01-05 200311" src="https://github.com/user-attachments/assets/9d0883b6-9e0a-4b45-a134-9dd19fdcbf82" />
