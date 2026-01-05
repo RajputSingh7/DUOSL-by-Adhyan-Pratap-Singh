@@ -25,7 +25,9 @@ In order to access the code of model and training files:
 1. Go to Main_model(Written in python)
 2. To run the final it requires the run of unity
 3. For testing images in testing data Run Data_testing
-The below video explains the use of the app
+
+Link of daily logs: https://docs.google.com/document/d/1ba7ME0XPmJSvxR3s9Fks7kprNiFspFejLj91UlaeFUE/edit?tab=t.0
+
 Results:
 
 The results are in the final report as well.
