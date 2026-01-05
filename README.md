@@ -18,6 +18,7 @@ https://drive.google.com/file/d/1KJp7J1eeIs8UlLYECQdOA1iHIys7j26k/view?usp=drive
 
 For video on how to use the application. Mic was not working The video link: https://drive.google.com/file/d/14r6X3QcVctk6xPMCyHw_oNm2h8ENMP-F/view?usp=sharing
 In order to access the final application.
+1. Ensure that python is installed and in command prompt type pip install numpy pandas matplotlib opencv-python mediapipe torch torchvisione
 1. Go to Build 
 2. Run the file Duosl BYOP.exe
 
