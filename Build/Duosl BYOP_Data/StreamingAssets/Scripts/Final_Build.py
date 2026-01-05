@@ -50,21 +50,17 @@ class SignLanguageMLP(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-# ================= DEVICE =================
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 model = SignLanguageMLP(input_size=63, num_classes=28).to(device)
 model.load_state_dict(torch.load("sign_model.pth", map_location=device))
 model.eval()
 
-# ================= LABELS (28 ONLY) =================
 LABELS = [
     'A','B','C','D','E','F','G','H','I','J',
     'K','L','M','N','O','P','Q','R','S','T',
     'U','V','W','X','Y','Z','del','space'
 ]
-
-# ================= MEDIAPIPE =================
 mp_hands = mp.solutions.hands
 mp_draw = mp.solutions.drawing_utils
 
@@ -75,14 +71,11 @@ hands = mp_hands.Hands(
     min_tracking_confidence=0.7
 )
 
-# ================= NORMALIZED LANDMARKS =================
 def extract_normalized_63(hand_landmarks):
     lm = hand_landmarks.landmark
 
-    # Wrist as origin
     wx, wy, wz = lm[0].x, lm[0].y, lm[0].z
 
-    # Middle MCP for scale
     mx, my, mz = lm[9].x, lm[9].y, lm[9].z
 
     scale = np.sqrt(
@@ -104,7 +97,6 @@ def extract_normalized_63(hand_landmarks):
 
     return np.array(data, dtype=np.float32)
 
-# ================= TEXT BUILDER =================cam
 prediction_buffer = deque(maxlen=15)
 sentence = ""
 last_committed = None
@@ -116,7 +108,6 @@ def get_stable_prediction(buffer):
         return None
     return Counter(buffer).most_common(1)[0][0]
 
-# ================= OPENCV LOOP =================
 cap = cv2.VideoCapture(0)
 def send_sign(sign, confidence):
     data = {
@@ -190,13 +181,6 @@ while cap.isOpened():
 
     if cooldown > 0:
         cooldown -= 1
-
-    # ================= UI =================
-
-
-
-    
-
     if cv2.waitKey(1) & 0xFF == 27:
         break
 
