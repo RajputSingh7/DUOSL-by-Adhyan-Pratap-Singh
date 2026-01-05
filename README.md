@@ -16,7 +16,7 @@ Overview of the UI:
 In order to access the unity project, download it from the link 
 https://drive.google.com/file/d/1KJp7J1eeIs8UlLYECQdOA1iHIys7j26k/view?usp=drive_link
 
-For video on how to use the application. The video link:
+For video on how to use the application. Mic was not working The video link: https://drive.google.com/file/d/1ovHDKI4Fin8faG_0SHUKqkP9t0F7lST7/view?usp=sharing
 In order to access the final application.
 1. Go to Build 
 2. Run the file Duosl BYOP.exe
